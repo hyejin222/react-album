@@ -38,7 +38,7 @@ resolve: {
 css: {
     preprocessorOptions: {
         scss: {
-            additionalData: `@import "./src/assets/common/main.scss`,
+            additionalData: `@import "./src/assets/styles/main.scss";`,
         },
     },
 },
