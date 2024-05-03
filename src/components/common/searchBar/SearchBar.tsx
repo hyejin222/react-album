@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import styles from './searchBar.module.scss';
 import { searchState } from '@/recoil/atoms/searchState';
-import { useRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 
 function SearchBar() {
-    const [search, setSearch] = useRecoilState(searchState);
+    const setSearch = useSetRecoilState(searchState);
     const [text, setText] = useState('');
     const onChange = (e) => {
         setText(e.target.value);

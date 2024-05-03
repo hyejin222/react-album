@@ -9,10 +9,10 @@ import Footer from '@components/common/footer/Footer';
 import DetailDailog from '@components/common/dialog/DetailDailog';
 import Card from './components/Card';
 
-import styles from './styles/index.module.scss';
+import styles from './Index.module.scss';
 import { CardDTO } from './types/card';
 
-function index() {
+function Index() {
     const imgSelector = useRecoilValueLoadable(imageData);
     const [imgData, setImgData] = useState<CardDTO>();
     const [open, setOpen] = useState<boolean>(false); // 이미지 상세 다이얼로그 발생(관리) State
@@ -58,4 +58,4 @@ function index() {
     );
 }
 
-export default index;
+export default Index;
